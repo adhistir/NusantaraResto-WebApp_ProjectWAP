@@ -91,7 +91,38 @@
     </script>
 
     <!--JS QR CODE -->
-    <script>
+<script>
+    // Get the order code from session
+    let orderCode = '<%= Session["orderCode"] %>';
+
+    // Create a JSON object with the order code
+    let jsonData = {
+        orderCode: orderCode
+    };
+
+    // Create a QR code with the JSON data
+    let qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: JSON.stringify(jsonData),
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    // Remove the cart data from local storage
+    localStorage.removeItem("cart");
+
+  // Remove session variables
+  <%Session.Remove("nomor-meja");%>
+  <%Session.Remove("nama-pemesan");%>
+  <%Session.Remove("no-hp-pemesan");%>
+  <%Session.Remove("orderCode");%>
+</script>
+
+
+    <!--JS QR CODE -->
+   <%-- <script>
     // Get the cart data from local storage
     let cartData = localStorage.getItem('cart');
     let cart = JSON.parse(cartData);
@@ -153,7 +184,7 @@ jsonData.grandTotal = 'Rp ' + jsonData.grandTotal.toLocaleString('id-ID');
     <%Session.Remove("nama-pemesan");%>
     <%Session.Remove("no-hp-pemesan");%>
     <%Session.Remove("orderCode");%>
-    </script>
+    </script>--%>
 
 
     </body>

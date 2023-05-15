@@ -1,0 +1,124 @@
+﻿
+/* Style Navbar*/
+/* Navbar draw lines */
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: #000000;
+    }
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+    .navbar .navbar-nav .nav-item::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: green;
+        width: 0%;
+        content: "";
+        height: 4px;
+        transition: all 0.5s;
+    }
+
+    .navbar .navbar-nav .nav-item:hover::after {
+        width: 100%;
+    }
+
+/* Navbar draw lines */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+.navbar-brand {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 900;
+}
+
+    .navbar-brand:hover,
+    .navbar-brand > span:hover {
+        color: green !important;
+    }
+
+.nav-link {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 60;
+}
+
+    .nav-link:hover {
+        border-radius: 3px;
+        color: green !important;
+    }
+
+/* card styles */
+
+.card {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.card-price {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn.btn-sm.card-button {
+    margin-top: 10px;
+    background-color: green;
+    border-color: green;
+    color: #fff;
+}
+
+    .btn.btn-sm.card-button:hover {
+        background-color: #25b918;
+        border-color: #25b918;
+        color: #fff;
+    }
+
+
+/* menu title */
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('https://resepkoki.id/wp-content/uploads/2017/11/Resep-Ayam-Bakar-Padang-1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .circle span {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+.menutitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

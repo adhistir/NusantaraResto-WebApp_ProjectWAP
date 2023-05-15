@@ -112,8 +112,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\CreateMenu.aspx" />
+    <Content Include="admin\css\styles.css" />
+    <Content Include="admin\DeleteMenu.aspx" />
+    <Content Include="admin\js\datatables.js" />
+    <Content Include="admin\js\script.js" />
+    <Content Include="admin\kategori.aspx" />
+    <Content Include="admin\menu.aspx" />
+    <Content Include="admin\UpdateMenu.aspx" />
+    <Content Include="css\LoginAdmin.css" />
+    <Content Include="css\pesanan.css" />
     <Content Include="getDataMakanan.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="js\script.js" />
+    <Content Include="LoginAdmin.aspx" />
     <Content Include="pesanan.aspx" />
     <Content Include="pesanan.css" />
     <Content Include="qrcode.aspx" />
@@ -121,6 +133,41 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\CreateMenu.aspx.cs">
+      <DependentUpon>CreateMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\CreateMenu.aspx.designer.cs">
+      <DependentUpon>CreateMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DeleteMenu.aspx.cs">
+      <DependentUpon>DeleteMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DeleteMenu.aspx.designer.cs">
+      <DependentUpon>DeleteMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\kategori.aspx.cs">
+      <DependentUpon>kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\kategori.aspx.designer.cs">
+      <DependentUpon>kategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UpdateMenu.aspx.cs">
+      <DependentUpon>UpdateMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UpdateMenu.aspx.designer.cs">
+      <DependentUpon>UpdateMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="getDataMakanan.aspx.cs">
       <DependentUpon>getDataMakanan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -134,6 +181,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdmin.aspx.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAdmin.aspx.designer.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="pesanan.aspx.cs">
       <DependentUpon>pesanan.aspx</DependentUpon>

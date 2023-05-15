@@ -340,6 +340,11 @@
             const stock = event.target.getAttribute("data-menuStock");
             const imageUrl = event.target.getAttribute("data-image");
 
+            // periksa apakah quantity melebihi stock
+            if (parseInt(quantity) > stock) {
+                alert(`Jumlah quantity melebihi jumlah stock (${stock})`);
+                return;
+            }
 
             // cek apakah makanan sudah ada di keranjang
             let cart = localStorage.getItem("cart");
@@ -348,11 +353,8 @@
 
                 // cek apakah makanan sudah ada di keranjang
                 const existingItemIndex = cart.findIndex(item => item.menuCode === menuCode);
-                // periksa apakah quantity melebihi stock
-                if (parseInt(quantity) > stock) {
-                    alert(`Jumlah quantity melebihi jumlah stock (${stock})`);
-                    return;
-                }
+
+                
                 if (existingItemIndex !== -1) {
                     // jika makanan sudah ada, tambahkan quantity
                     cart[existingItemIndex].quantity += parseInt(quantity);

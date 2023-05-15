@@ -1,0 +1,28 @@
+﻿body {
+    background-color: #F0EEED;
+}
+
+/* login */
+
+.cardLogin {
+    background-color: #6b9489;
+}
+.btn-login:hover {
+    opacity: 0.8;
+    background-color: white;
+}
+
+#btnLoginAdmin {
+    background-color: #435f57;
+    color:white;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+
+
+
+/* login */
