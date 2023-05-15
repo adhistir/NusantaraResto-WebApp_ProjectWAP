@@ -159,7 +159,7 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add to Cart</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Tambahkan ke Keranjang</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -541,10 +541,7 @@
                                             icon: "success",
                                             
                                         });
-                                        setTimeout(() => {
-                                            // Remove the cart data from local storage
-                                            localStorage.removeItem("cart");
-                                            
+                                        setTimeout(() => {                                           
                                             // Redirect to the next page
                                             window.location.href = "qrcode.aspx";
                                         }, 2500);

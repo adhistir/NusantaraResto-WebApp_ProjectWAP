@@ -51,7 +51,7 @@ namespace Project_Nusantara_Resto
                         "<p class=\"card-price fs-5\">Rp. " + hargaMakanan + "</p>" +
                         "</div>" +
                         "<button type=\"button\" class=\"btn btn-sm card-button ms-auto\" data-bs-toggle=\"modal\" " +
-                        "data-bs-target=\"#addToCartModal" + menuCode + "\">Add to Cart</button>" +
+                        "data-bs-target=\"#addToCartModal" + menuCode + "\"><i class=\"fa-solid fa-cart-shopping\"></i> Tambahkan</button>" +
                         "</div>" +
                         "</div>" +
                         "</div>"); 

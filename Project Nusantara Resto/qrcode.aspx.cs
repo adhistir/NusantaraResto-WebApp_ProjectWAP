@@ -21,14 +21,7 @@ namespace Project_Nusantara_Resto
             {
                 Response.Redirect("index.aspx");
             }
-            else
-            {
-                //removesession
-                Session.Remove("nomor-meja");
-                Session.Remove("nama-pemesan");
-                Session.Remove("no-hp-pemesan");
-                Session.Remove("orderCode");
-            }
+            
 
         }
     }
